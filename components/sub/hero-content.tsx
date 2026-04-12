@@ -15,45 +15,46 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-row items-center justify-center px-20 mt-40 w-full z-[20]"
+      className="flex flex-col-reverse md:flex-row-reverse items-center justify-center px-10 md:px-20 mt-40 w-full z-[20]"
     >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
+      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start" dir="rtl">
         <motion.div
           variants={slideInFromTop}
-          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+          className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
         >
           <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
           <h1 className="Welcome-text text-[13px]">
-            Fullstack Developer Portfolio
+            مبرمج تطبيقات · مواقع · أتمتة ذكية
           </h1>
         </motion.div>
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-6xl text-bold text-white max-w-[600px] w-auto h-auto"
+          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto leading-[1.3] md:leading-[1.4]"
         >
           <span>
-            Providing{" "}
+            حياك الله، هنا نحول فكرتك إلى مشروع{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
-              the best
+              رقمي ذكي
             </span>{" "}
-            project experience.
+            متكامل.
           </span>
         </motion.div>
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-base md:text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Full Stack Software Engineer with experience in Website,
-          Mobile, and Software development. Check out my projects and skills.
+          من الفكرة للإطلاق — تطبيقات جوال، أنظمة ويب، شات بوتات ذكية، وحملات تسويقية تجيب نتائج.
         </motion.p>
 
         <motion.a
+          href="https://wa.me/966541428814"
+          target="_blank"
           variants={slideInFromLeft(1)}
           className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
         >
-          Learn more
+          ابدأ مشروعك
         </motion.a>
       </div>
 
@@ -63,7 +64,7 @@ export const HeroContent = () => {
       >
         <Image
           src="/hero-bg.svg"
-          alt="work icons"
+          alt="أيقونات فضاء"
           height={650}
           width={650}
           draggable={false}

@@ -1,4 +1,4 @@
-import { FaYoutube, FaFacebook } from "react-icons/fa";
+import { FaYoutube, FaTiktok } from "react-icons/fa";
 import {
   RxDiscordLogo,
   RxGithubLogo,
@@ -90,19 +90,19 @@ export const SKILL_DATA = [
 
 export const SOCIALS = [
   {
+    name: "YouTube",
+    icon: FaYoutube,
+    link: "https://youtube.com/@aboodix1717?si=caOt_gmdeBZwijh9",
+  },
+  {
+    name: "TikTok",
+    icon: FaTiktok,
+    link: "https://www.tiktok.com/@abdullah_ai2030?_r=1&_t=ZS-95TH06jB9Vt",
+  },
+  {
     name: "Instagram",
     icon: RxInstagramLogo,
-    link: "https://instagram.com",
-  },
-  {
-    name: "Facebook",
-    icon: FaFacebook,
-    link: "https://facebook.com",
-  },
-  {
-    name: "Twitter",
-    icon: RxTwitterLogo,
-    link: "https://x.com/_sanidhyy",
+    link: "https://www.instagram.com/abdullah_ai02?igsh=MW9paTlhemtvYmRmbQ%3D%3D&utm_source=qr",
   },
 ] as const;
 
@@ -259,86 +259,67 @@ export const OTHER_SKILL = [
 
 export const PROJECTS = [
   {
-    title: "Modern Next.js 14 Portfolio",
+    title: "تطبيق توصيل طلبات متكامل",
     description:
-      'Embark on a journey through my professional evolution with the "Modern Next.js Portfolio" - a dynamic showcase of my skills, experiences, and passion for web development. Crafted with precision and powered by Next.js, this portfolio is more than just a static display; it\'s an immersive experience that reflects the cutting edge of modern web technologies.',
-    image: "/projects/project-1.png",
-    link: "https://example.com",
+      "تطبيق متكامل لإدارة التوصيل مع تتبع حي للسائقين على الخريطة، إشعارات فورية، ونظام تقييم. بنيته ليدعم التاجر، العميل، والسائق لضمان أفضل تجربة للمستخدم بأحدث التقنيات.",
+    image: "/projects/delivery_app.png",
+    link: "https://wa.me/966541428814",
   },
   {
-    title: "Interactive Cards Portfolio",
+    title: "مساعد الذكاء الاصطناعي والأتمتة",
     description:
-      'Step into the extraordinary world of my professional journey through the "Interactive Cards Portfolio" - an innovative and visually captivating platform that redefines the traditional portfolio experience. Ditching the conventional static layout, this portfolio leverages interactive cards to showcase my skills, projects, and personality in an engaging and dynamic manner.',
-    image: "/projects/project-2.png",
-    link: "https://example.com",
+      "شات بوت ذكي مدمج مع الواتساب وتيلجرام لتقديم خدمات الرد الآلي المتقدمة. يقوم بأتمتة خدمة العملاء، وجدولة المواعيد، وتقديم استشارات باستخدام أحدث نماذج توليد النصوص المتقدمة.",
+    image: "/projects/ai_chatbot.png",
+    link: "https://wa.me/966541428814",
   },
   {
-    title: "Space Themed Website",
+    title: "نظام إدارة مطاعم شامل (ERP)",
     description:
-      'Embark on an interstellar journey with my "Space Themed Website", a mesmerizing space-themed website that invites you to explore the cosmic wonders beyond our world. Immerse yourself in an awe-inspiring digital experience that blends cutting-edge design with the mysteries of the universe.',
-    image: "/projects/project-3.png",
-    link: "https://example.com",
+      "نظام لوحة تحكم (POS) شامل مصمم لتسهيل المهام التشغيلية كالطلب من نقاط البيع، إدارة الطاولات، تتبع المبيعات وتقاريرها الدقيقة، بالإضافة إلى إدارة المخزون والموظفين بسلاسة تامة.",
+    image: "/projects/restaurant_pos.png",
+    link: "https://wa.me/966541428814",
+  },
+  {
+    title: "منصة تجارة إلكترونية B2B",
+    description:
+      "متجر إلكتروني متقدم لقطاع الأعمال مبرمج بـ Next.js و Node.js يدعم تعدد البائعين، وبوابات دفع إلكتروني آمنة، بالإضافة للوحة تحكم مخصصة لإدارة العمليات والمبيعات.",
+    image: "/projects/b2b_ecommerce.png",
+    link: "https://wa.me/966541428814",
+  },
+  {
+    title: "أتمتة سير العمل بـ n8n و Make",
+    description:
+      "ربط الأنظمة ببعضها (CRM مع الواتساب وأنظمة الفوترة). يقوم النظام تلقائياً باستقبال بيانات العميل، إصدار فاتورة، وإرسالها عبر الواتساب بدون تدخل بشري لتوفير الوقت والجهد.",
+    image: "/projects/workflow_automation.png",
+    link: "https://wa.me/966541428814",
+  },
+  {
+    title: "تطبيق حجز عيادات طبية",
+    description:
+      "تطبيق جوال Flutter يسمح للمرضى بحجز المواعيد واستشارة الأطباء عن بعد. يتضمن نظام دفع مسبق، ومتابعة التاريخ الطبي، وتنبيهات فورية للمرضى قبل الموعد.",
+    image: "/projects/medical_booking.png",
+    link: "https://wa.me/966541428814",
   },
 ] as const;
 
 export const FOOTER_DATA = [
   {
-    title: "Community",
+    title: "تواصل معي",
     data: [
       {
         name: "YouTube",
         icon: FaYoutube,
-        link: "https://youtube.com",
+        link: "https://youtube.com/@aboodix1717?si=caOt_gmdeBZwijh9",
       },
       {
-        name: "GitHub",
-        icon: RxGithubLogo,
-        link: "https://github.com",
+        name: "TikTok",
+        icon: FaTiktok,
+        link: "https://www.tiktok.com/@abdullah_ai2030?_r=1&_t=ZS-95TH06jB9Vt",
       },
-      {
-        name: "Discord",
-        icon: RxDiscordLogo,
-        link: "https://discord.com",
-      },
-    ],
-  },
-  {
-    title: "Social Media",
-    data: [
       {
         name: "Instagram",
         icon: RxInstagramLogo,
-        link: "https://instagram.com",
-      },
-      {
-        name: "Twitter",
-        icon: RxTwitterLogo,
-        link: "https://x.com/_sanidhyy",
-      },
-      {
-        name: "Linkedin",
-        icon: RxLinkedinLogo,
-        link: "https://linkedin.com",
-      },
-    ],
-  },
-  {
-    title: "About",
-    data: [
-      {
-        name: "Become Sponsor",
-        icon: null,
-        link: "https://youtube.com",
-      },
-      {
-        name: "Learning about me",
-        icon: null,
-        link: "https://example.com",
-      },
-      {
-        name: "Contact Me",
-        icon: null,
-        link: "mailto:contact@example.com",
+        link: "https://www.instagram.com/abdullah_ai02?igsh=MW9paTlhemtvYmRmbQ%3D%3D&utm_source=qr",
       },
     ],
   },
@@ -346,19 +327,19 @@ export const FOOTER_DATA = [
 
 export const NAV_LINKS = [
   {
-    title: "About me",
+    title: "من أنا",
     link: "#about-me",
   },
   {
-    title: "Skills",
+    title: "المهارات",
     link: "#skills",
   },
   {
-    title: "Projects",
+    title: "مشاريعي",
     link: "#projects",
   },
 ] as const;
 
 export const LINKS = {
-  sourceCode: "https://github.com/sanidhyy/space-portfolio",
+  sourceCode: "https://wa.me/966541428814",
 };

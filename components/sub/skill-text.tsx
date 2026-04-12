@@ -11,14 +11,19 @@ import {
 
 export const SkillText = () => {
   return (
-    <div className="w-full h-auto flex flex-col items-center justify-center">
+    <motion.div
+      initial="hidden"
+      animate="visible"
+      dir="rtl"
+      className="w-full h-auto flex flex-col items-center justify-center mt-10"
+    >
       <motion.div
         variants={slideInFromTop}
-        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]]"
+        className="Welcome-box py-[8px] px-[7px] border border-[#7042f88b] opacity-[0.9]"
       >
         <SparklesIcon className="text-[#b49bff] mr-[10px] h-5 w-5" />
         <h1 className="Welcome-text text-[13px]">
-          Think better with Next.js 14
+          أفكار مبتكرة، تقنيات متطورة
         </h1>
       </motion.div>
 
@@ -26,15 +31,15 @@ export const SkillText = () => {
         variants={slideInFromLeft(0.5)}
         className="text-[30px] text-white font-medium mt-[10px] text-center mb-[15px]"
       >
-        Making apps with modern technologies.
+        بناء تطبيقات وأنظمة بأحدث التقنيات.
       </motion.div>
 
       <motion.div
         variants={slideInFromRight(0.5)}
         className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
       >
-        Never miss a task, deadline or idea.
+        خطط مبتكرة، إنتاجية أعلى، أخطاء أقل.
       </motion.div>
-    </div>
+    </motion.div>
   );
 };

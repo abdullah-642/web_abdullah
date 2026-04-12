@@ -9,7 +9,7 @@ export const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
+    <div dir="rtl" className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001427] backdrop-blur-md z-50 px-10">
       {/* Navbar Container */}
       <div className="w-full h-full flex items-center justify-between m-auto px-[10px]">
         {/* Logo + Name */}
@@ -18,14 +18,14 @@ export const Navbar = () => {
           className="flex items-center"
         >
           <Image
-            src="/logo.png"
+            src="/hero.png"
             alt="Logo"
-            width={70}
-            height={70}
+            width={40}
+            height={40}
             draggable={false}
-            className="cursor-pointer"
+            className="cursor-pointer rounded-full"
           />
-          <div className="hidden md:flex md:selffont-bold ml-[10px] text-gray-300">John Doe</div>
+          <div className="hidden md:flex font-bold ml-[10px] mr-[10px] text-gray-300">عبدالله | AI Agent</div>
         </Link>
 
         {/* Web Navbar */}
@@ -41,14 +41,14 @@ export const Navbar = () => {
               </Link>
             ))}
 
-            {/* Source Code */}
+            {/* Contact */}
             <Link
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(112,66,248)] transition"
+              className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-green-400 font-bold"
             >
-              Source Code
+              تواصل معي
             </Link>
           </div>
         </div>
@@ -67,13 +67,7 @@ export const Navbar = () => {
           ))}
         </div>
 
-        {/* Hamburger Menu */}
-        <button
-          className="md:hidden text-white focus:outline-none text-4xl"
-          onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        >
-          ☰
-        </button>
+
       </div>
 
       {/* Mobile Menu */}
@@ -95,10 +89,10 @@ export const Navbar = () => {
               href={LINKS.sourceCode}
               target="_blank"
               rel="noreferrer noopener"
-              className="cursor-pointer hover:text-[rgb(112,66,248)] transition text-center"
+              className="cursor-pointer text-green-400 font-bold transition text-center"
               onClick={() => setIsMobileMenuOpen(false)}
             >
-              Source Code
+              تواصل معي
             </Link>
           </div>
 
