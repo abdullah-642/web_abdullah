@@ -46,6 +46,8 @@ Here is the folder structure of this app.
 <!--- FOLDER_STRUCTURE_START --->
 ```bash
 space-portfolio/
+  |- .agents/
+    |-- skills/
   |- app/
     |-- apple-icon.png
     |-- favicon.ico
@@ -53,6 +55,7 @@ space-portfolio/
     |-- icon1.png
     |-- icon2.png
     |-- layout.tsx
+    |-- mockups.css
     |-- page.tsx
   |- components/
     |-- main/
@@ -73,6 +76,7 @@ space-portfolio/
   |- package-lock.json
   |- package.json
   |- postcss.config.js
+  |- skills-lock.json
   |- tailwind.config.ts
   |- tsconfig.json
 ```
