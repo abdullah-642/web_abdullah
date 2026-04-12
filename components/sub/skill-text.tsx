@@ -36,7 +36,7 @@ export const SkillText = () => {
 
       <motion.div
         variants={slideInFromRight(0.5)}
-        className="cursive text-[20px] text-gray-200 mb-10 mt-[10px] text-center"
+        className="text-[18px] text-[#b0aac0] mb-10 mt-[10px] text-center leading-relaxed"
       >
         خطط مبتكرة، إنتاجية أعلى، أخطاء أقل.
       </motion.div>

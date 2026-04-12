@@ -15,7 +15,7 @@ export const HeroContent = () => {
     <motion.div
       initial="hidden"
       animate="visible"
-      className="flex flex-col-reverse md:flex-row-reverse items-center justify-center px-10 md:px-20 mt-40 w-full z-[20]"
+      className="flex flex-col-reverse md:flex-row-reverse items-center justify-center px-5 md:px-20 mt-28 md:mt-40 w-full z-[20]"
     >
       <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start" dir="rtl">
         <motion.div
@@ -30,11 +30,11 @@ export const HeroContent = () => {
 
         <motion.div
           variants={slideInFromLeft(0.5)}
-          className="flex flex-col gap-6 mt-6 text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto leading-[1.3] md:leading-[1.4]"
+          className="flex flex-col gap-4 mt-4 text-[28px] sm:text-4xl md:text-6xl font-bold text-white max-w-[600px] w-auto h-auto leading-[1.4] md:leading-[1.4]"
         >
           <span>
             حياك الله، هنا نحول فكرتك إلى مشروع{" "}
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+            <span className="text-[#c4a1ff]">
               رقمي ذكي
             </span>{" "}
             متكامل.
@@ -43,7 +43,7 @@ export const HeroContent = () => {
 
         <motion.p
           variants={slideInFromLeft(0.8)}
-          className="text-base md:text-lg text-gray-400 my-5 max-w-[600px]"
+          className="text-base md:text-lg text-[#b0aac0] my-5 max-w-[600px] leading-relaxed"
         >
           من الفكرة للإطلاق — تطبيقات جوال، أنظمة ويب، شات بوتات ذكية، وحملات تسويقية تجيب نتائج.
         </motion.p>

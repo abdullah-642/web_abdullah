@@ -15,7 +15,7 @@ export const Encryption = () => {
           dir="rtl"
         >
           أداء{" "}
-          <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-500 to-cyan-500">
+          <span className="text-[#c4a1ff]">
             &
           </span>{" "}
           أمان عالي.
@@ -46,7 +46,7 @@ export const Encryption = () => {
       </div>
 
       <div className="absolute z-[20] bottom-[10px] px-[5px]" dir="rtl">
-        <div className="cursive text-[20px] font-medium text-center text-gray-300">
+        <div className="text-[18px] font-medium text-center text-[#b0aac0] leading-relaxed">
           نضمن أعلى معايير الحماية لبياناتك ومشاريعك.
         </div>
       </div>
