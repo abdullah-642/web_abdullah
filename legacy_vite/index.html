@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Abdullah | AI Agent</title>
+  <meta name="description" content="عبدالله — مبرمج تطبيقات ومواقع ومتخصص أتمتة بالذكاء الاصطناعي">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Inter:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+
+  <canvas id="bg-canvas"></canvas>
+
+  <!-- Theme Toggle Only -->
+  <button class="theme-btn" id="themeToggle" aria-label="تبديل الوضع">
+    <i class="fas fa-sun" id="themeIcon"></i>
+  </button>
+
+  <main>
+
+    <!-- ─── HERO ─── -->
+    <section class="hero" id="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <div class="hero-eyebrow anim-item">
+            <span class="eyebrow-dot"></span>
+            مبرمج تطبيقات · مواقع · أتمتة ذكية
+          </div>
+          <h1 class="hero-h1 anim-item">
+            حياك الله، هنا نحول فكرتك إلى مشروع<br>
+            <span class="hero-highlight">حلول رقمية ذكية</span>
+          </h1>
+          <p class="hero-p anim-item">من الفكرة للإطلاق — تطبيقات جوال، أنظمة ويب، شات بوتات ذكية، وحملات تسويقية تجيب
+            نتائج.</p>
+          <div class="hero-btns anim-item">
+            <a href="#work" class="btn-solid">
+              شاهد أعمالي
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <path d="M7 17L17 7M17 7H7M17 7V17" />
+              </svg>
+            </a>
+            <a href="https://wa.me/966541428814" target="_blank" rel="noopener" class="btn-outline">
+              <i class="fab fa-whatsapp"></i> ابدأ مشروعك
+            </a>
+          </div>
+        </div>
+        <div class="hero-avatar-wrap anim-item">
+          <img src="/hero.png" alt="عبدالله - مبرمج ومطور" class="hero-avatar">
+        </div>
+      </div>
+      <div class="hero-metrics container anim-item">
+        <div class="metric">
+          <strong class="counter" data-target="50">0</strong><span>+</span>
+          <small>مشروع منجز</small>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric">
+          <strong class="counter" data-target="35">0</strong><span>+</span>
+          <small>عميل</small>
+        </div>
+        <div class="metric-sep"></div>
+        <div class="metric">
+          <strong class="counter" data-target="5">0</strong><span>+</span>
+          <small>سنوات خبرة</small>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── ABOUT ─── -->
+    <section class="about section" id="about">
+      <div class="container">
+        <div class="about-layout">
+          <div class="about-txt">
+            <span class="label anim-item">من أنا</span>
+            <h2 class="anim-item">مبرمج ومطوّر أنظمة<br>متخصص في الأتمتة والذكاء الاصطناعي</h2>
+            <p class="anim-item">بدأت رحلتي في عالم التقنية من شغف حقيقي بحل المشكلات. اليوم أقدم حلول رقمية متكاملة
+              تجمع بين البرمجة والتسويق الرقمي والذكاء الاصطناعي.</p>
+            <p class="anim-item">أشتغل مع شركات وأفراد يبحثون عن شريك تقني يفهم احتياجهم — من بناء تطبيقات الجوال إلى
+              أنظمة إدارة كاملة وشات بوتات ذكية.</p>
+            <div class="about-skills anim-item">
+              <span>Flutter</span><span>React</span><span>Next.js</span><span>Python</span>
+              <span>Node.js</span><span>Supabase</span><span>Firebase</span><span>n8n</span>
+            </div>
+          </div>
+          <div class="about-numbers">
+            <div class="num-card anim-item">
+              <div class="num-icon"><i class="fas fa-code"></i></div>
+              <div class="num-val"><span class="counter" data-target="50">0</span>+</div>
+              <div class="num-desc">مشروع تم تسليمه</div>
+            </div>
+            <div class="num-card anim-item">
+              <div class="num-icon"><i class="fas fa-robot"></i></div>
+              <div class="num-val"><span class="counter" data-target="12">0</span>+</div>
+              <div class="num-desc">نظام أتمتة يعمل</div>
+            </div>
+            <div class="num-card anim-item">
+              <div class="num-icon"><i class="fas fa-comments"></i></div>
+              <div class="num-val"><span class="counter" data-target="8">0</span>+</div>
+              <div class="num-desc">شات بوت ذكي</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── PROJECTS ─── -->
+    <section class="work section" id="work">
+      <div class="container">
+        <span class="label anim-item">أعمالي</span>
+        <h2 class="section-h2 anim-item">مشاريع حقيقية، نتائج ملموسة.</h2>
+
+        <!-- Featured: Delivery App -->
+        <div class="proj proj-featured anim-item" id="proj-delivery">
+          <div class="proj-mockup">
+            <div class="phone-frame">
+              <div class="phone-notch"></div>
+              <div class="phone-screen delivery-screen">
+                <div class="ds-header"><span>🟢 متصل</span><strong>توصيلي</strong><i class="fas fa-bell"></i></div>
+                <div class="ds-map">
+                  <div class="ds-map-road"></div>
+                  <div class="ds-map-road ds-map-road-2"></div>
+                  <div class="ds-pin ds-pin-restaurant"><i class="fas fa-store"></i></div>
+                  <div class="ds-pin ds-pin-user"><i class="fas fa-location-dot"></i></div>
+                  <div class="ds-pin ds-pin-driver"><i class="fas fa-motorcycle"></i></div>
+                  <div class="ds-route"></div>
+                </div>
+                <div class="ds-card">
+                  <div class="ds-driver">
+                    <div class="ds-avatar-circle">م</div>
+                    <div><strong>محمد السائق</strong><small>⭐ 4.9 · يصل خلال 12 دقيقة</small></div>
+                  </div>
+                  <div class="ds-order">
+                    <div class="ds-order-row"><span>برجر دبل × 2</span><span>٤٨ ر.س</span></div>
+                    <div class="ds-order-row"><span>بطاطس كبير</span><span>١٢ ر.س</span></div>
+                    <div class="ds-order-total"><span>الإجمالي</span><span>٦٠ ر.س</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-badge">تطبيق جوال</div>
+            <h3>تطبيق توصيل طلبات</h3>
+            <p>تطبيق متكامل لإدارة التوصيل مع تتبع حي للسائقين على الخريطة، إشعارات فورية، ونظام تقييم. يدعم التاجر
+              والعميل والسائق.</p>
+            <div class="proj-stack"><span>Flutter</span><span>Firebase</span><span>Google Maps</span></div>
+          </div>
+        </div>
+
+        <!-- Grid Row -->
+        <div class="proj-grid">
+          <!-- Restaurant System -->
+          <div class="proj proj-card anim-item" id="proj-restaurant">
+            <div class="proj-screen dashboard-screen">
+              <div class="dash-sidebar">
+                <div class="dash-logo">🍽️</div>
+                <div class="dash-nav-item active"><i class="fas fa-chart-bar"></i></div>
+                <div class="dash-nav-item"><i class="fas fa-receipt"></i></div>
+                <div class="dash-nav-item"><i class="fas fa-utensils"></i></div>
+              </div>
+              <div class="dash-main">
+                <div class="dash-topbar"><span>لوحة التحكم</span><span class="dash-date">٢٠٢٥/٠٣/١٥</span></div>
+                <div class="dash-stats">
+                  <div class="dash-stat"><small>المبيعات</small><strong>١٢,٤٥٠</strong></div>
+                  <div class="dash-stat"><small>الطلبات</small><strong>٨٧</strong></div>
+                  <div class="dash-stat"><small>الطاولات</small><strong>١٢/١٨</strong></div>
+                </div>
+                <div class="dash-chart">
+                  <div class="dash-bar" style="--h:40%"></div>
+                  <div class="dash-bar" style="--h:65%"></div>
+                  <div class="dash-bar" style="--h:55%"></div>
+                  <div class="dash-bar" style="--h:80%"></div>
+                  <div class="dash-bar" style="--h:70%"></div>
+                  <div class="dash-bar" style="--h:90%"></div>
+                  <div class="dash-bar" style="--h:75%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-badge">نظام ويب</div>
+              <h3>نظام مطاعم متكامل</h3>
+              <p>نظام POS شامل — نقاط بيع، إدارة طاولات، تقارير مبيعات، وإدارة مخزون.</p>
+              <div class="proj-stack"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+            </div>
+          </div>
+
+          <!-- Tracking System -->
+          <div class="proj proj-card anim-item" id="proj-tracking">
+            <div class="proj-screen tracking-screen">
+              <div class="trk-header"><strong>تتبع المناديب</strong><span class="trk-live">● LIVE</span></div>
+              <div class="trk-map">
+                <div class="trk-dot" style="top:30%;right:40%"><span>أحمد</span></div>
+                <div class="trk-dot" style="top:50%;right:65%"><span>سعد</span></div>
+                <div class="trk-dot" style="top:70%;right:30%"><span>خالد</span></div>
+                <div class="trk-dot" style="top:25%;right:70%"><span>فهد</span></div>
+              </div>
+              <div class="trk-footer">
+                <div class="trk-stat"><strong>١٢</strong><small>نشط</small></div>
+                <div class="trk-stat"><strong>٤٧</strong><small>توصيلة</small></div>
+                <div class="trk-stat"><strong>٩٨%</strong><small>التزام</small></div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-badge">نظام تتبع</div>
+              <h3>نظام تتبع المناديب</h3>
+              <p>منصة تتبع في الوقت الفعلي مع تحسين المسارات وتقارير الأداء.</p>
+              <div class="proj-stack"><span>Flutter</span><span>Maps API</span><span>Supabase</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-col row -->
+        <div class="proj-grid proj-grid-3">
+          <!-- Classifieds -->
+          <div class="proj proj-card proj-sm anim-item">
+            <div class="proj-screen clf-screen">
+              <div class="clf-search"><i class="fas fa-search"></i> <span>ابحث في الإعلانات...</span></div>
+              <div class="clf-cats"><span class="active">🚗 سيارات</span><span>🏠 عقارات</span><span>📱 أجهزة</span>
+              </div>
+              <div class="clf-item">
+                <div class="clf-img"></div>
+                <div><strong>كامري ٢٠٢٣</strong><small>٨٥,٠٠٠ ر.س</small></div>
+              </div>
+              <div class="clf-item">
+                <div class="clf-img clf-img2"></div>
+                <div><strong>شقة ٣ غرف</strong><small>١,٢٠٠/شهر</small></div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <h3>موقع إعلانات مبوبة</h3>
+              <div class="proj-stack"><span>Next.js</span><span>PostgreSQL</span></div>
+            </div>
+          </div>
+
+          <!-- Logistics -->
+          <div class="proj proj-card proj-sm anim-item">
+            <div class="proj-screen log-screen">
+              <div class="log-header"><strong>الشحنات</strong><span>٢٤ نشطة</span></div>
+              <div class="log-shipment">
+                <div class="log-route">
+                  <div class="log-point active">الرياض</div>
+                  <div class="log-line">
+                    <div class="log-prog"></div>
+                  </div>
+                  <div class="log-point">جدة</div>
+                </div>
+                <small>SHP-2847 · ٤ ساعات</small>
+              </div>
+              <div class="log-shipment">
+                <div class="log-route">
+                  <div class="log-point active">الدمام</div>
+                  <div class="log-line">
+                    <div class="log-prog" style="width:80%"></div>
+                  </div>
+                  <div class="log-point">المدينة</div>
+                </div>
+                <small>SHP-2851 · ساعة</small>
+              </div>
+            </div>
+            <div class="proj-info">
+              <h3>خدمات لوجستية</h3>
+              <div class="proj-stack"><span>Flutter</span><span>Node.js</span></div>
+            </div>
+          </div>
+
+          <!-- WhatsApp Bot -->
+          <div class="proj proj-card proj-sm anim-item">
+            <div class="proj-screen wa-screen">
+              <div class="wa-hdr">
+                <div class="wa-av">🤖</div>
+                <div><strong>بوت خدمة العملاء</strong><small>متصل</small></div>
+              </div>
+              <div class="wa-chat">
+                <div class="wa-msg wa-user">وش حالة طلبي #4521؟</div>
+                <div class="wa-msg wa-bot">طلبك في مرحلة التوصيل 🚚<br>الوصول: خلال ٣٠ دقيقة<br>السائق: محمد</div>
+                <div class="wa-msg wa-user">ايه أرسل رابط التتبع</div>
+                <div class="wa-msg wa-bot">تفضل 📍<br><span class="wa-link">track.app/4521</span></div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <h3>شات بوت واتساب</h3>
+              <div class="proj-stack"><span>Python</span><span>GPT API</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 2-col row -->
+        <div class="proj-grid">
+          <!-- Telegram Bot -->
+          <div class="proj proj-card anim-item">
+            <div class="proj-screen tg-screen">
+              <div class="tg-hdr"><i class="fab fa-telegram"></i>
+                <div><strong>المستشار القانوني</strong><small>bot</small></div>
+              </div>
+              <div class="tg-chat">
+                <div class="tg-msg tg-user">ما حقوقي كموظف إذا تم فصلي؟</div>
+                <div class="tg-msg tg-bot"><strong>حقوق الموظف عند الفصل:</strong><br>١. تعويض نهاية الخدمة<br>٢. أجر
+                  المدة المتبقية<br>٣. تعويض الفصل التعسفي<br><em>📋 تريد تفاصيل أكثر؟</em></div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-badge">ذكاء اصطناعي</div>
+              <h3>شات بوت تيلجرام للمحاماة</h3>
+              <p>بوت ذكي متخصص في الاستشارات القانونية بالعربية.</p>
+              <div class="proj-stack"><span>Python</span><span>Telegram API</span><span>AI</span></div>
+            </div>
+          </div>
+
+          <!-- Image Analysis -->
+          <div class="proj proj-card anim-item">
+            <div class="proj-screen vis-screen">
+              <div class="vis-hdr">نظام تحليل الصور</div>
+              <div class="vis-body">
+                <div class="vis-img-area">
+                  <div class="vis-placeholder"><i class="fas fa-image"></i><span>فاتورة.jpg</span></div>
+                  <div class="vis-scan"></div>
+                  <div class="vis-box vis-box1"></div>
+                  <div class="vis-box vis-box2"></div>
+                </div>
+                <div class="vis-results">
+                  <div class="vis-tag">✓ المتجر: بندة</div>
+                  <div class="vis-tag">✓ التاريخ: 2025/03/10</div>
+                  <div class="vis-tag">✓ المجموع: ٢٤٧ ر.س</div>
+                  <div class="vis-tag">✓ الضريبة: ٣٧ ر.س</div>
+                </div>
+              </div>
+            </div>
+            <div class="proj-info">
+              <div class="proj-badge">ذكاء اصطناعي</div>
+              <h3>نظام تحليل الصور</h3>
+              <p>تحليل صور الفواتير تلقائياً واستخراج البيانات.</p>
+              <div class="proj-stack"><span>Python</span><span>Gemini Vision</span></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Marketing System Wide -->
+        <div class="proj proj-wide anim-item">
+          <div class="proj-screen mkt-screen">
+            <div class="mkt-hdr"><strong>لوحة التسويق</strong>
+              <div class="mkt-tabs"><span class="active">نظرة عامة</span><span>الحملات</span><span>التقارير</span></div>
+            </div>
+            <div class="mkt-body">
+              <div class="mkt-kpis">
+                <div class="mkt-kpi"><small>الوصول</small><strong>١.٢M</strong><span class="mkt-up">↑ ٢٣%</span></div>
+                <div class="mkt-kpi"><small>التحويلات</small><strong>٤,٨٥٠</strong><span class="mkt-up">↑ ١٥%</span>
+                </div>
+                <div class="mkt-kpi"><small>ROI</small><strong>٣٤٠%</strong><span class="mkt-up">↑ ٤٥%</span></div>
+                <div class="mkt-kpi"><small>الميزانية</small><strong>٧٥%</strong><span class="mkt-ok">⬤</span></div>
+              </div>
+              <div class="mkt-chart">
+                <svg viewBox="0 0 300 80" preserveAspectRatio="none">
+                  <defs>
+                    <linearGradient id="cg" x1="0" y1="0" x2="0" y2="1">
+                      <stop offset="0%" stop-color="var(--accent)" stop-opacity="0.3" />
+                      <stop offset="100%" stop-color="var(--accent)" stop-opacity="0" />
+                    </linearGradient>
+                  </defs>
+                  <polyline points="0,60 30,55 60,40 90,45 120,25 150,30 180,15 210,20 240,10 270,18 300,5" fill="none"
+                    stroke="var(--accent)" stroke-width="2" />
+                  <polyline points="0,60 30,55 60,40 90,45 120,25 150,30 180,15 210,20 240,10 270,18 300,5 300,80 0,80"
+                    fill="url(#cg)" />
+                </svg>
+              </div>
+            </div>
+          </div>
+          <div class="proj-info">
+            <div class="proj-badge">منصة متكاملة</div>
+            <h3>نظام تسويق متكامل</h3>
+            <p>إدارة جميع حملاتك التسويقية — تتبع الأداء، تحليل ROI، وتقارير تلقائية.</p>
+            <div class="proj-stack"><span>React</span><span>Python</span><span>Analytics API</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── MARKETING SERVICES ─── -->
+    <section class="services section" id="services">
+      <div class="container">
+        <span class="label anim-item">خدمات التسويق</span>
+        <h2 class="section-h2 anim-item">مو بس برمجة — تسويق يجيب نتائج.</h2>
+        <div class="svc-grid">
+          <div class="svc-card anim-item">
+            <div class="svc-icon"><i class="fab fa-snapchat"></i></div>
+            <h3>إعلانات سناب شات</h3>
+            <p>حملات مستهدفة توصل لجمهورك بدقة — تصميم، إطلاق، وتحسين مستمر.</p>
+          </div>
+          <div class="svc-card anim-item">
+            <div class="svc-icon"><i class="fab fa-tiktok"></i></div>
+            <h3>إعلانات تيك توك</h3>
+            <p>محتوى إعلاني يجذب الانتباه ويحقق انتشار واسع بتكلفة ذكية.</p>
+          </div>
+          <div class="svc-card anim-item">
+            <div class="svc-icon"><i class="fab fa-x-twitter"></i></div>
+            <h3>إعلانات تويتر</h3>
+            <p>حملات تبني وعي بعلامتك وتزيد التفاعل والمتابعين المستهدفين.</p>
+          </div>
+          <div class="svc-card anim-item">
+            <div class="svc-icon"><i class="fab fa-google"></i></div>
+            <h3>إعلانات قوقل و SEO</h3>
+            <p>ظهور في النتائج الأولى — Google Ads + تحسين محركات البحث.</p>
+          </div>
+          <div class="svc-card svc-wide anim-item">
+            <div class="svc-icon"><i class="fas fa-bullseye"></i></div>
+            <h3>خطط تسويقية متكاملة</h3>
+            <p>استراتيجية شاملة مبنية على بيانات عملك — من التخطيط إلى التنفيذ والتحليل.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ─── CTA ─── -->
+    <section class="cta section" id="contact">
+      <div class="container cta-inner">
+        <h2 class="cta-h2 anim-item">عندك فكرة مشروع؟</h2>
+        <p class="cta-p anim-item">خلنا نحوّلها لواقع. أرسل لي رسالة وابدأ مشروعك القادم.</p>
+        <a href="https://wa.me/966541428814" target="_blank" rel="noopener" class="cta-wa anim-item" id="cta-whatsapp">
+          <i class="fab fa-whatsapp"></i> تواصل عبر واتساب
+        </a>
+        <div class="cta-phone anim-item">
+          <a href="https://wa.me/966541428814" target="_blank">+966 541 428 814</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <span>منصة عبدالله - للخدمات الرقمية</span>
+      <span>© 2026</span>
+    </div>
+  </footer>
+
+  <a href="https://wa.me/966541428814" target="_blank" rel="noopener" class="float-wa" id="float-wa"
+    aria-label="واتساب">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <script type="module" src="/scene.js"></script>
+  <script type="module" src="/main.js"></script>
+</body>
+
+</html>

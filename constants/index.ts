@@ -338,6 +338,10 @@ export const NAV_LINKS = [
     title: "مشاريعي",
     link: "#projects",
   },
+  {
+    title: "المدونة",
+    link: "/blog",
+  },
 ] as const;
 
 export const LINKS = {
