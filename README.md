@@ -49,6 +49,7 @@ space-portfolio/
   |- .agents/
     |-- skills/
   |- app/
+    |-- blog/
     |-- apple-icon.png
     |-- favicon.ico
     |-- globals.css
@@ -64,10 +65,23 @@ space-portfolio/
     |-- index.ts
   |- constants/
     |-- index.ts
+  |- legacy_vite/
+    |-- index.html
+    |-- main.js
+    |-- package-lock.json
+    |-- package.json
+    |-- scene.js
+    |-- style.css
   |- lib/
     |-- motion.ts
     |-- utils.ts
   |- public/
+  |- src/
+    |-- assets/
+    |-- counter.js
+    |-- main.js
+    |-- style.css
+  |- temp-portfolio/
   |- .eslintrc.json
   |- .gitignore
   |- eslint.config.mjs
